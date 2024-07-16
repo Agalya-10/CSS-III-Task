@@ -14,7 +14,7 @@
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: normal;
     /* padding: 10px; */
-    margin-left: 150px;
+    margin-left: 70px;
     margin-top: 20px;
     /* padding-bottom: 0px; */
 }
@@ -39,7 +39,7 @@
     width: 110px;
     /* padding-right: 60px; */
     border-radius: 8px;
-    margin: 15px 0px 8px 780px;
+    margin: 15px 0px 8px 700px;
     padding: 6px 95px 4px 0px;
 }
 .border:hover{
@@ -101,14 +101,15 @@
 .container{
 display: grid;
 grid-template-columns: auto auto auto auto;
-overflow-y: hidden;
+/* overflow-y: hidden; */
+/* column-gap: 30px; */
 }
 .first{
     width: 270px;
     height: 380px;
     border: 1px solid rgb(191, 187, 187);
     border-radius: 5px;
-    margin-left: 150px;
+    margin-left: 80px;
     margin-top: 100px;
    }
   .fancy{
@@ -233,7 +234,7 @@ overflow-y: hidden;
     height: 380px;
     border: 1px solid rgb(191, 187, 187);
     border-radius: 5px;
-    margin-right: 100px;
+    margin-right: 50px;
     /* margin-left: 10px; */
     margin-top: 100px;
 }
@@ -259,7 +260,7 @@ overflow-y: hidden;
     height: 380px;
     border: 1px solid rgb(191, 187, 187);
     border-radius: 5px;
-    margin-left: 150px;
+    margin-left: 80px;
     margin-top: 50px;
 }
 .six{
@@ -285,7 +286,7 @@ overflow-y: hidden;
     border-radius: 5px;
     /* margin-left: 30px; */
     margin-top: 50px;
-    margin-right: 100px;
+    margin-right: 50px;
 }
 .line{
     background-color: #212529;
@@ -296,6 +297,57 @@ overflow-y: hidden;
     font-size: 16px;
     text-align: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+@media screen and (max-width:1024px) {
+    .container{
+        column-gap: 10px;
+        /* margin-right: 20px; */
+        /* justify-content: center; */
+    }
+    .boot{
+        margin-left: 50px;
+    }
+    .border{
+        margin-left: 450px;
+    }
+    .first{
+        width: 220px;
+        /* margin-left: 40px; */
+
+    }
+    .value1{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .second{
+        width: 220px;
+    }
+    .top{
+        margin-left: 160px;
+    }
+    #icon1{
+        margin-left: 70px;
+    }
+    .third{
+        width: 220px;
+    }
+    .four{
+        width: 220px;
+        /* margin-right: 80px; */
+    }
+    .five{
+        width: 220px;
+    }
+    .six{
+        width: 220px;
+    }
+    .seven{
+        width: 220px;
+    }
+    .eight{
+        width: 220px;
+        /* margin-right: 50px; */
+    }
 }
 @media screen and (max-width:768px) {
     
@@ -341,13 +393,14 @@ overflow-y: hidden;
     }
     .container{
         display:flex;
-        flex-wrap: wrap;
+        flex-wrap:wrap;
         column-gap: 10px;
+      
     }
     .first{
         width: 200px;
         height: 330px;
-        margin-left: 40px;
+        margin-left: 70px;
         /* margin-right: 10px; */
     }
     .value1{
@@ -391,7 +444,7 @@ overflow-y: hidden;
     .four{
         width: 200px;
         height: 330px;
-        margin-left: 40px;
+        margin-left: 70px;
         margin-top: 50px;
         margin-right: 0px;
     }
@@ -414,18 +467,148 @@ overflow-y: hidden;
     .seven{
         width: 200px;
         height: 330px;
-        margin-left: 150px;
+        margin-left: 180px;
     }
     .eight{
         width: 200px;
         height: 330px;
         margin-left: 10px;
-        margin-right: 0px;
+        /* margin-right: 0px; */
     }
 }
 @media screen and (max-width:375px) {
+    .boot{
+        margin-left: 22px;
+    }
     #menu{
-       margin-left: 30%;
+       margin-left: 39%;
+    }
+    .heading{
+        font-size: 33px;
+    }
+    .para{
+        font-size: 20px;
+    }
+    .container{
+        display:grid;
+        flex-wrap: wrap;
+        grid-template-columns: auto auto;
+        margin-left: 15px;
+    }
+    .first{
+        width: 150px;
+        height: 350px;
+        margin-left: 10px;
+        /* margin-right: 0px; */
+    }
+    .view{
+        margin-top: 40px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .second{
+        width: 150px;
+        height: 350px;
+        /* margin-right: 50px; */
+    }
+    .top{
+        margin-left: 100px;
+        margin-top: 6px;
+    }
+    #icon1{
+        margin-left: 40px;
+    }
+    .add{
+        margin-top: 10px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .third{
+        width: 150px;
+        height: 350px;
+        margin-top: 50px;
+        /* margin-right: 5px; */
+        /* margin-left: 40px; */
+    }
+    .add1{
+        margin-top: 65px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .four{
+        width: 150px;
+        height: 350px;
+        margin-left: 10px;
+        /* margin-right: 5px; */
+    }
+    .add2{
+        margin-top: 30px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .five{
+        width: 150px;
+        height: 350px;
+    }
+    .six{
+        width: 150px;
+        height: 350px;
+    }
+    .seven{
+        width: 150px;
+        height: 350px;
+        margin-left: 10px;
+    }
+    .eight{
+        width: 150px;
+        height: 350px;
+        /* margin-left: 30px; */
+    }
+}
+@media screen and (max-width:320px) {
+   #menu{
+        margin-left: 30%;
+     }
+     
+     .first{
+        width: 130px;
+        height: 320px;
+    }
+    .second {
+        width: 130px;
+        height: 320px;
+        /* margin-right: 50px; */
+    }
+    .top{
+        margin-left: 80px;
+    }
+    #icon1{
+        margin-left: 30px;
+    }
+    .third{
+        width: 130px;
+        height: 320px;
+    }
+    .four{
+        width: 130px;
+        height: 320px;
+        /* margin-right: 50px; */
+    }
+    .five{
+        width: 130px;
+        height: 320px;
+    }
+    .six{
+        width: 130px;
+        height: 320px;
+    }
+    .seven{
+        width: 130px;
+        height: 320px;
+    }
+    .eight{
+        width: 130px;
+        height: 320px;
     }
 }
 
